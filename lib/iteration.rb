@@ -52,7 +52,7 @@ if outer_results[0] > outer_results[1]
    outer_results.shift!
 end
 
-end 
+end
 
 def total_even_pairs(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
