@@ -40,17 +40,19 @@ while row_index < src.count do
     else
       inner_results << src[row_index][1]
     end
+    
     element_index += 2
-  end
+   end
+  
   outer_results << inner_results
   row_index += 1
-end
+ end
    outer_results.sort
    outer_results.shift
    outer_results
 end
 
-end
+
 
 def total_even_pairs(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
