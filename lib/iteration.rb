@@ -35,11 +35,12 @@ while row_index < src.count do
     #   Element of the inner array at element_index
     #   The first character of that element...
     if src[row_index][element_index][0] > src[row_index][element_index][1]
+
       inner_results << src[row_index][element_index][0]
     else
       inner_results << src[row_index][element_index][1]
     end
-    element_index += 1
+    element_index += 2
   end
   outer_results << inner_results
   row_index += 1
