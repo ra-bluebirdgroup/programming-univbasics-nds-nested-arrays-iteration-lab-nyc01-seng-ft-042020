@@ -85,6 +85,6 @@ def total_even_pairs(src)
     outer_results << inner_results
    end
 
-     outer_result
+     outer_results
 
 end
