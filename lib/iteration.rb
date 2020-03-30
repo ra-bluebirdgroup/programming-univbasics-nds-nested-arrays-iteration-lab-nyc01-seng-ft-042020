@@ -36,9 +36,9 @@ while row_index < src.count do
     #   The first character of that element...
     if src[row_index][0] > src[row_index][1]
 
-      inner_results << src[row_index][element_index]
+      inner_results << src[row_index][0]
     else
-      inner_results << src[row_index][element_index]
+      inner_results << src[row_index][1]
     end
     element_index += 2
   end
