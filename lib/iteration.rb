@@ -40,10 +40,10 @@ while row_index < src.count do
     else
       inner_results << src[row_index][1]
     end
-    
+
     element_index += 2
    end
-  
+
   outer_results << inner_results
   row_index += 1
  end
