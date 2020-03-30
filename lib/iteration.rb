@@ -85,7 +85,6 @@ def total_even_pairs(src)
     outer_results << inner_results
     row_index += 1
    end
-     #outer_results.shift
      outer_results
 
 end
