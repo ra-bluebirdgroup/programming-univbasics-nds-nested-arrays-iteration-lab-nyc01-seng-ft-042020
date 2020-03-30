@@ -73,7 +73,7 @@ def total_even_pairs(src)
       #   Array at row_index
       #   Element of the inner array at element_index
       #   The comparison of elements...
-      if src[row_index][element_index].even?
+      if src[row_index][element_index].even? && src[row_index][element_index+1].even?
 
         inner_results << src[row_index][element_index]
 
