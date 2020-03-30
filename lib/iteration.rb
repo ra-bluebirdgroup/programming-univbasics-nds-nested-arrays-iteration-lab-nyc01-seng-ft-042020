@@ -48,7 +48,7 @@ while row_index < src.count do
   row_index += 1
  end
    outer_results.sort
-   outer_results.flaten
+   outer_results.flatten!
    #outer_results.shift
    outer_results
 end
