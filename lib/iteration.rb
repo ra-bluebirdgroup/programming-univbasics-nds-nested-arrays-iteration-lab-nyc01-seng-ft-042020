@@ -67,15 +67,15 @@ def total_even_pairs(src)
   row_index = 0
   while row_index < src.count do
     element_index = 0
-    inner_results = []
+    inner_results = 0
     while element_index < src[row_index].count do
       # How to read the following line of code:
       #   Array at row_index
       #   Element of the inner array at element_index
       #   The comparison of elements...
-      if src[row_index][0].even? && src[row_index][1].even?
+      if src[row_index][element_index].even?
 
-        inner_results << src[row_index]
+        inner_results + src[row_index][element_index]
 
       end
 
