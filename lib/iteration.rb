@@ -45,11 +45,9 @@ while row_index < src.count do
   outer_results << inner_results
   row_index += 1
 end
-
-if outer_results[0] > outer_results[1]
-   outer_results.pop
- else
-   outer_results.shift!
+   outer_results.sort 
+   outer_results.shift
+   outer_results
 end
 
 end
