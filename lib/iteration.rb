@@ -94,7 +94,7 @@ while row_index < src.count do
 
     if src[row_index][0].even? && src[row_index][1].even?
     total += src[row_index][0] + src[row_index][1]
-    lement_index += 2
+    element_index += 2
     end
    row_index += 1
   end
