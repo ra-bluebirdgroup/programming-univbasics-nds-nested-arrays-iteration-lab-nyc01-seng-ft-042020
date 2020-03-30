@@ -76,7 +76,7 @@ def total_even_pairs(src)
       if src[row_index][element_index].even?
 
         inner_results << src[row_index][element_index]
-      
+
       end
 
       element_index += 1
@@ -84,7 +84,7 @@ def total_even_pairs(src)
     row_index += 1
     outer_results << inner_results
    end
-   
+
      outer_results.to_i 
 
 end
