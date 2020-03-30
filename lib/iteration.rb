@@ -65,24 +65,22 @@ def total_even_pairs(src)
   # this!
   sum = 0
   row_index = 0
+  
   while row_index < src.count do
+    
     element_index = 0
     inner_results = 0
+    
     while element_index < src[row_index].count do
-      # How to read the following line of code:
-      #   Array at row_index
-      #   Element of the inner array at element_index
-      #   The comparison of elements...
-      if src[row_index][0].even? && src[row_index][1].even?
-        sum = src[row_index][0] + src[row_index][1]
-        inner_results += sum
-
+      
+      if src[row_index][0].even? and src[row_index][1].even?
+        sum += src[row_index][0] + src[row_index][1]
       end
-
+      
       element_index += 1
      end
+     
     row_index += 1
-    sum << inner_results
    end
 
      sum
