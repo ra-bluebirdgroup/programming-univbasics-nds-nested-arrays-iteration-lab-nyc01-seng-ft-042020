@@ -96,10 +96,10 @@ while row_index < src.count do
     total += src[row_index][0] + src[row_index][1]
     lement_index += 2
     end
-
+   row_index += 1
   end
 
-  row_index += 1
+
 end
 
 total
