@@ -82,7 +82,7 @@ def total_even_pairs(src)
       element_index += 1
      end
     row_index += 1
-    outer_results << inner_results
+    sum << inner_results
    end
 
      sum
