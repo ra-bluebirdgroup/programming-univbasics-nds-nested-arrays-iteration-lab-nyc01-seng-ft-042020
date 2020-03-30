@@ -34,7 +34,7 @@ while row_index < src.count do
     #   Array at row_index
     #   Element of the inner array at element_index
     #   The first character of that element...
-    if src[row_index][element_index][0] > src[row_index][element_index][1]
+    if src[row_index][element_index] > src[row_index][element_index]
 
       inner_results << src[row_index][element_index][0]
     else
