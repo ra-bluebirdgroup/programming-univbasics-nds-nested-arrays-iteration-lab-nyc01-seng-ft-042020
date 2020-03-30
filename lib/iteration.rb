@@ -86,14 +86,19 @@ def total_even_pairs(src)
 #      sum
 total = 0
 row_index = 0
+
 while row_index < src.count do
   element_index = 0
+  
   while element_index < src[row_index].count do
+    
     if src[row_index][0].even? && src[row_index][1].even?
-    total += src[row_index][0] + src[row_index][1]
-    element_index += 2
+    total += src[row_index][0] + src[row_index][1] 
+    lement_index += 2
     end
+    
   end
+  
   row_index += 1
 end
 
