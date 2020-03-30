@@ -45,8 +45,10 @@ while row_index < src.count do
   outer_results << inner_results
   row_index += 1
 end
-
-outer_results #=>
+if outer_results[0] > outer_results[1]
+   outer_results.pop
+ else
+   outer_results.unshift
 end
 
 def total_even_pairs(src)
